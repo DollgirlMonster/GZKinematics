@@ -37,7 +37,7 @@ class Zombieman_IKDemo : Zombieman replaces Zombieman
             chainVis[i].SetOrigin(chain.segments[i].Pos, true);
             
             // Optional: Make sure we don't clip into the floor
-            if (chainVis[i].Z < chainVis[i].floorz) chainVis[i].SetOrigin(chainVis[i].Pos.PlusZ(-(chainVis[i].Pos.Z - chainVis[i].floorz)), true);
+            if (chainVis[i].Pos.Z < chainVis[i].floorz) chainVis[i].SetOrigin(chainVis[i].Pos.PlusZ(-(chainVis[i].Pos.Z - chainVis[i].floorz)), true);
         }
     }
 }
