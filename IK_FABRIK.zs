@@ -182,7 +182,7 @@ class IK_FABRIKChain {
             // Multiply the direction by the distance constant to get the new position for the previous segment
             Vector3 scaledDirection = direction * distanceConstant;
 
-            // Multiply by the distance constant to get the new position for the previous segment
+            // Add the scaled direction to the current segment's position to get the new position for the previous segment
             segmentsPrime[i - 1].Pos = segmentsPrime[i].Pos + scaledDirection;
         }
 
@@ -212,7 +212,7 @@ class IK_FABRIKChain {
             // Multiply the direction by the distance constant to get the new position for the next segment
             Vector3 scaledDirection = direction * distanceConstant;
 
-            // Multiply by the distance constant to get the new position for the next segment
+            // Add the scaled direction to the current segment's position to get the new position for the next segment
             segmentsPrime[i + 1].Pos = segmentsPrime[i].Pos + scaledDirection;
         }
 
