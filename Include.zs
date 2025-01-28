@@ -12,3 +12,6 @@
 
 #include "IK_FABRIK.zs"         // Inverse Kinematics
 // #include "IK_FABRIK_Demo.zs"
+
+#include "FK.zs"                // Forward Kinematics
+// #include "FK_Demo.zs"
