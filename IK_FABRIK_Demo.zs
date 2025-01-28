@@ -33,7 +33,7 @@ class Zombieman_IKDemo : Zombieman replaces Zombieman
         chain.Solve(startPos, endPos);
 
         // Update the position of the chain Actors based on the new positions of the chain segments
-        for (int i = 0; i < chain.Size(); i++) {
+        for (int i = 0; i < chainVis.Size(); i++) {
             chainVis[i].SetOrigin(chain.segments[i].Pos, true);
             
             // Optional: Make sure we don't clip into the floor
